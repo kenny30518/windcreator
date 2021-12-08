@@ -133,7 +133,7 @@ $('.s1 a').on('click', function() {
 })
 
 $('.s2-1 a').on('click', function() {
-	TweenMax.from('.thinkImage', 2, {autoAlpha: 0});
+	TweenMax.to('.s2Image', 2, {autoAlpha: 1},"+=1");
 	var tl3 = new TimelineMax();
 
 	tl3.fromTo(".s2 h3, .s2 .arrow",1,{
